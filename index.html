@@ -163,15 +163,25 @@ label{
     margin-bottom:10px;
 }
 
-input{    width: -webkit-fill-available; width: -moz-available; width: fill-available; width: 100%;    max-width: 100%;    border:none;    outline:none;
-    display:block;
-    box-sizing:border-box;
+input{
+    width:100%;
+    max-width:100%;
+    border:none;
+    outline:none;
+
     padding:14px;
+
     border-radius:16px;
+
     background:rgba(255,255,255,.1);
+
     color:var(--text);
+
     font-size:18px;
-    transition:.25s;    border:1px solid var(--glass-border);}
+
+    transition:.25s;
+    border:1px solid var(--glass-border);
+}
 
 input:focus{
     transform:scale(1.02);
@@ -424,6 +434,12 @@ input:focus{
     color: var(--muted);
     font-size: 14px;
     padding: 20px 0;
+}
+
+input[type="date"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 </style>
