@@ -163,8 +163,9 @@ label{
     margin-bottom:10px;
 }
 
-input{    width:100%;    max-width:100%;    border:none;    outline:none;
+input{    width: -webkit-fill-available; width: -moz-available; width: fill-available; width: 100%;    max-width: 100%;    border:none;    outline:none;
     display:block;
+    box-sizing:border-box;
     padding:14px;
     border-radius:16px;
     background:rgba(255,255,255,.1);
